@@ -1,18 +1,15 @@
-# 🌐 DNS (Domain Name System)
+### 🌐 DNS (Domain Name System)
 
----
 
-## 🧩 What is DNS?
+### 🧩 What is DNS?
 
-**English:**
+
 DNS (Domain Name System) is a system that translates **domain names** (like `www.google.com`) into **IP addresses** (like `142.250.190.78`) so that computers can locate each other on a network.
 
-**বাংলা:**
 DNS হলো এমন একটি সিস্টেম যা **ডোমেইন নাম** (যেমন `www.google.com`) কে **IP address** (যেমন `142.250.190.78`) এ রূপান্তর করে, যাতে কম্পিউটার একে অপরকে খুঁজে পেতে পারে।
 
----
 
-## ⚙️ Why DNS is Needed
+### ⚙️ Why DNS is Needed
 
 | Reason | English Explanation | বাংলা ব্যাখ্যা |
 |--------|----------------------|----------------|
@@ -20,9 +17,9 @@ DNS হলো এমন একটি সিস্টেম যা **ডোমে
 | **Dynamic IP Changes** | IP addresses of servers may change, but domain names remain the same. | সার্ভারের IP পরিবর্তন হলেও ডোমেইন নাম অপরিবর্তিত থাকে। |
 | **Efficient Communication** | Converts names to IPs automatically for seamless browsing. | নাম থেকে IP রূপান্তর স্বয়ংক্রিয়ভাবে হয়, ফলে ব্রাউজিং সহজ হয়। |
 
----
 
-## 🔗 Example
+
+### 🔗 Example
 
 When you type `www.google.com` in your browser:
 
@@ -31,9 +28,9 @@ When you type `www.google.com` in your browser:
 3. It returns something like `142.250.190.78`.  
 4. Your browser then connects to that IP address to load the website.
 
----
+<br>
 
-## 🧠 DNS Working Process (Step-by-Step)
+### 🧠 DNS Working Process (Step-by-Step)
 
 | Step | Process | Explanation |
 |------|----------|-------------|
@@ -45,9 +42,9 @@ When you type `www.google.com` in your browser:
 | 6️⃣ | **Authoritative DNS Server** | Returns the actual IP address of the domain. |
 | 7️⃣ | **Response Returned** | Resolver sends IP back to browser → browser connects to web server. |
 
----
 
-## 🌍 DNS Hierarchy (Structure)
+
+### 🌍 DNS Hierarchy (Structure)
 
 ```
                 ┌─────────────┐
@@ -62,9 +59,9 @@ When you type `www.google.com` in your browser:
 
 ```
 
----
 
-## 🧩 Types of DNS Servers
+
+### 🧩 Types of DNS Servers
 
 | Type | Function | বাংলা ব্যাখ্যা |
 |------|-----------|----------------|
@@ -73,9 +70,9 @@ When you type `www.google.com` in your browser:
 | **Authoritative DNS Server** | Stores actual IP address of the website. | ওয়েবসাইটের আসল IP ঠিকানা সংরক্ষণ করে। |
 | **Recursive Resolver** | Resolves the domain by querying other DNS servers. | ব্যবহারকারীর অনুরোধ অনুযায়ী IP খুঁজে বের করে। |
 
----
 
-## 🧱 DNS Record Types
+
+### 🧱 DNS Record Types
 
 | Record Type | Description | Example |
 |--------------|-------------|----------|
@@ -86,9 +83,9 @@ When you type `www.google.com` in your browser:
 | **NS Record** | Nameserver record | Specifies DNS servers for a domain |
 | **TXT Record** | Stores text data (e.g., SPF, verification) | Used for authentication, SPF, etc. |
 
----
 
-## 🧠 Example DNS Resolution Flow
+
+### 🧠 Example DNS Resolution Flow
 ```
 User → Browser → Local Cache
 ↓
@@ -104,19 +101,18 @@ Browser connects to the Web Server
 
 ```
 
----
 
-## 🔒 DNS Security (DNSSEC)
+### 🔒 DNS Security (DNSSEC)
 
 **DNSSEC (Domain Name System Security Extensions)**  
 Adds a layer of security to DNS by verifying that responses come from legitimate DNS servers and are not tampered with.
 
-**বাংলা:**  
+
 DNSSEC DNS সিস্টেমে অতিরিক্ত নিরাপত্তা যোগ করে, যাতে ভুল বা হ্যাকড সার্ভার থেকে ভুয়া IP না আসে।
 
----
 
-## 💡 Summary
+
+### 💡 Summary
 
 - DNS translates domain names into IP addresses.  
 - Works through Root → TLD → Authoritative servers.  
@@ -124,11 +120,11 @@ DNSSEC DNS সিস্টেমে অতিরিক্ত নিরাপত�
 - Makes internet browsing human-friendly.  
 - DNSSEC ensures security and authenticity.
 
----
+<br>
+<br>
 
-## 🔒 SSL & TLS (Secure Communication Protocols)
+### 🔒 SSL & TLS (Secure Communication Protocols)
 
----
 
 ### 🧠 What is SSL / TLS?
 
@@ -138,7 +134,7 @@ DNSSEC DNS সিস্টেমে অতিরিক্ত নিরাপত�
 - 🔹 **SSL →** পুরনো version  
 - 🔹 **TLS →** SSL এর আপডেটেড ও নিরাপদ version  
 
----
+<br>
 
 ### ⚙️ How It Works (কাজ করার পদ্ধতি)
 
@@ -150,7 +146,7 @@ DNSSEC DNS সিস্টেমে অতিরিক্ত নিরাপত�
 4. এরপর **Secure Connection (Handshake)** হয়।  
 5. সবশেষে, **Data Encrypt হয়ে পাঠানো হয়** — অর্থাৎ কেউ মাঝপথে পেলেও পড়তে পারবে না।
 
----
+<br>
 
 ### 🔑 Example
 
@@ -159,7 +155,7 @@ DNSSEC DNS সিস্টেমে অতিরিক্ত নিরাপত�
 | `http://example.com` | HTTP | ❌ No encryption |
 | `https://example.com` | HTTPS (HTTP + SSL/TLS) | ✅ Encrypted |
 
----
+<br>
 
 ### 🧩 Difference Between SSL and TLS
 
@@ -171,14 +167,14 @@ DNSSEC DNS সিস্টেমে অতিরিক্ত নিরাপত�
 | **Handshake Speed** | Slower | Faster |
 | **Current Use** | Deprecated | Widely Used |
 
----
+
 
 ### 💬 In Short
 
 **TLS** is the modern, secure version of **SSL** —  
 used to protect sensitive data (like passwords, payment info) between **client and server**.
 
----
+
 
 ### 📘 Real-Life Example
 
@@ -186,8 +182,8 @@ used to protect sensitive data (like passwords, payment info) between **client a
 তোমার **password বা personal data TLS encryption দিয়েই যায়**,  
 যাতে কোনো attacker সেটা **চুরি বা পরিবর্তন** করতে না পারে।
 
----
-## ⚙️ How SSL/TLS Works (Step-by-Step)
+
+### ⚙️ How SSL/TLS Works (Step-by-Step)
 
 | Step | Process | Description |
 |------|----------|-------------|
@@ -197,7 +193,7 @@ used to protect sensitive data (like passwords, payment info) between **client a
 | 4️⃣ | **Session Key Creation** | Browser and server agree on an encryption key. |
 | 5️⃣ | **Secure Communication** | All data is now encrypted and securely transferred. |
 
-**বাংলা ব্যাখ্যা:**
+**ব্যাখ্যা:**
 
 1️⃣ ক্লায়েন্ট (ব্রাউজার) সার্ভারকে বলে — “আমি নিরাপদ সংযোগ চাই।”  
 2️⃣ সার্ভার তার **SSL সার্টিফিকেট** পাঠায় (যেখানে public key থাকে)।  
@@ -205,9 +201,9 @@ used to protect sensitive data (like passwords, payment info) between **client a
 4️⃣ উভয়ে **Session Key** তৈরি করে, যা দিয়ে ডেটা এনক্রিপ্ট হয়।  
 5️⃣ এখন থেকে সব ডেটা **Encrypted** অবস্থায় আদান-প্রদান হয়।
 
----
 
-## 🧠 Key Concepts
+
+### 🧠 Key Concepts
 
 | Concept | English | বাংলা ব্যাখ্যা |
 |----------|----------|----------------|
@@ -217,9 +213,9 @@ used to protect sensitive data (like passwords, payment info) between **client a
 | **Public Key** | Used to encrypt data. | ডেটা এনক্রিপ্ট করার জন্য ব্যবহৃত। |
 | **Private Key** | Used to decrypt data. | ডেটা ডিক্রিপ্ট করার জন্য ব্যবহৃত। |
 
----
 
-## 🧩 SSL vs TLS
+
+### 🧩 SSL vs TLS
 
 | Feature | SSL | TLS |
 |----------|-----|-----|
@@ -233,9 +229,9 @@ used to protect sensitive data (like passwords, payment info) between **client a
 👉 TLS is the **updated and secure version** of SSL.  
 Nowadays, when we say "SSL certificate", we actually mean **TLS certificate**.
 
----
 
-## 🔒 Types of SSL/TLS Certificates
+
+### 🔒 Types of SSL/TLS Certificates
 
 | Type | Use Case | Example |
 |------|-----------|----------|
@@ -245,9 +241,8 @@ Nowadays, when we say "SSL certificate", we actually mean **TLS certificate**.
 | **Wildcard SSL** | Secures subdomains | `*.example.com` |
 | **Multi-Domain (SAN)** | Secures multiple domains | `example.com`, `myapp.com` |
 
----
 
-## 🧱 Why SSL/TLS is Important
+### 🧱 Why SSL/TLS is Important
 
 | Benefit | English Explanation | বাংলা ব্যাখ্যা |
 |----------|----------------------|----------------|
@@ -257,7 +252,7 @@ Nowadays, when we say "SSL certificate", we actually mean **TLS certificate**.
 | 🌍 **Trust & SEO** | Secure sites rank higher and gain user trust. | নিরাপদ সাইট ব্যবহারকারীর আস্থা ও SEO র‍্যাংক বাড়ায়। |
 
 
-## 🧠 Simple Diagram: SSL/TLS Working Flow
+### 🧠 Simple Diagram: SSL/TLS Working Flow
 ```
 [Browser] → Request Secure Page (https)
 ↓
@@ -269,12 +264,9 @@ Nowadays, when we say "SSL certificate", we actually mean **TLS certificate**.
 ↓
 🔐 Encrypted Data Exchange Begins
 ```
+<br><br>
 
-
-## ⚙️ Common Protocols and Ports
-
-
-
+### ⚙️ Common Protocols and Ports
 
 ### 🌍 1. HTTP — HyperText Transfer Protocol
 
@@ -293,9 +285,9 @@ http://example.com
 
 ➡️ Sends/receives text, images, HTML files in plain text.
 
----
 
-## 🔐 2. HTTPS — HyperText Transfer Protocol Secure
+
+### 🔐 2. HTTPS — HyperText Transfer Protocol Secure
 
 **🔹 Purpose:**  
 HTTP + Security (via SSL/TLS).  
@@ -313,9 +305,8 @@ https://google.com
 
 ➡️ Safe for login, banking, payments, etc.
 
----
 
-## 📂 3. FTP — File Transfer Protocol
+### 📂 3. FTP — File Transfer Protocol
 
 **🔹 Purpose:**  
 Server থেকে ফাইল upload/download করার জন্য ব্যবহৃত হয়।  
@@ -336,9 +327,8 @@ ftp://example.com
 
 ➡️ Developers use FTP to upload website files to hosting servers.
 
----
 
-## 🧰 4. SSH — Secure Shell
+### 🧰 4. SSH — Secure Shell
 
 **🔹 Purpose:**  
 Server-এ secure remote login করার জন্য ব্যবহৃত হয়।  
@@ -355,9 +345,9 @@ ssh user@192.168.1.10
 
 ➡️ Developers and sysadmins use SSH to configure or manage servers.
 
----
 
-## 🌐 5. DNS — Domain Name System
+
+### 🌐 5. DNS — Domain Name System
 
 **🔹 Purpose:**  
 Domain name (যেমন google.com) কে IP address (যেমন 142.250.183.14) এ রূপান্তর করে।  
@@ -374,9 +364,9 @@ DNS converts → 142.250.183.14
 ```
 
 
----
 
-## ✉️ 6. SMTP — Simple Mail Transfer Protocol
+
+### ✉️ 6. SMTP — Simple Mail Transfer Protocol
 
 **🔹 Purpose:**  
 Email পাঠানোর জন্য ব্যবহৃত হয় (Sending Mail)।  
@@ -394,9 +384,9 @@ Used by mail servers to send outgoing emails.
 ```
 Mail servers like Gmail, Yahoo use SMTP to send emails.
 ````
----
 
-## 🧭 Summary Table
+
+### 🧭 Summary Table
 
 | Protocol | Full Form | Default Port | Purpose | Secure? |
 |----------|-----------|--------------|--------|---------|
@@ -407,9 +397,9 @@ Mail servers like Gmail, Yahoo use SMTP to send emails.
 | DNS      | Domain Name System | 53 | Domain to IP resolution | ⚙️ Partially |
 | SMTP     | Simple Mail Transfer Protocol | 25 / 465 / 587 | Send emails | ✅ Yes (with TLS/SSL) |
 
----
 
-## 💡 Extra Tip for Interviews
+
+### 💡 Extra Tip for Interviews
 
 - “Which layer of OSI does HTTP/FTP/SMTP belong to?” — ✅ Application Layer  
 - “Which port does DNS use?” — ✅ 53 (UDP/TCP both)  
